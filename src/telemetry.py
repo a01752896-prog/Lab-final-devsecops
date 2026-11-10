@@ -7,10 +7,9 @@ def is_operation_allowed(operation: str) -> bool:
     """Autoriza únicamente operaciones de lectura.
 
     REQ-SEC-01: las operaciones write no autorizadas deben rechazarse.
-    NOTA: este archivo contiene una regresión deliberada para el laboratorio.
     """
-    # El desarrollador cambió esta condición durante una refactorización.
-    return operation in ("read", "write")
+    # Lista blanca estricta: solo "read" es válido; todo lo demás se rechaza.
+    return operation == ALLOWED_OPERATION
 
 
 def get_telemetry(operation: str, measurement: str = "temperature") -> dict:
