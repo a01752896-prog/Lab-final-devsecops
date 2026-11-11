@@ -1,0 +1,26 @@
+diff --git a/requirements-audit.txt b/requirements-audit.txt
+index 4652245..7d9db1f 100644
+--- a/requirements-audit.txt
++++ b/requirements-audit.txt
+@@ -1,3 +1,3 @@
+ # Manifiesto educativo para auditoría SCA; NO instalar.
+ # Dependencia de un componente hipotético, no importada por src/.
+-requests==2.19.1
++requests==2.34.2
+diff --git a/src/telemetry.py b/src/telemetry.py
+index 5c740d5..ccae3e7 100644
+--- a/src/telemetry.py
++++ b/src/telemetry.py
+@@ -7,10 +7,9 @@ def is_operation_allowed(operation: str) -> bool:
+     """Autoriza únicamente operaciones de lectura.
+ 
+     REQ-SEC-01: las operaciones write no autorizadas deben rechazarse.
+-    NOTA: este archivo contiene una regresión deliberada para el laboratorio.
+     """
+-    # El desarrollador cambió esta condición durante una refactorización.
+-    return operation in ("read", "write")
++    # Lista blanca estricta: solo "read" es válido; todo lo demás se rechaza.
++    return operation == ALLOWED_OPERATION
+ 
+ 
+ def get_telemetry(operation: str, measurement: str = "temperature") -> dict:

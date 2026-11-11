@@ -1,0 +1,2 @@
+$ python -m bandit -r . -x ./.venv,./tests -q
+exit=0

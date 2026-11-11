@@ -1,0 +1,307 @@
+﻿2026-11-10T08:07:19.3620580Z Current runner version: '2.338.2'
+2026-11-10T08:07:19.3646537Z ##[group]Runner Image Provisioner
+2026-11-10T08:07:19.3647556Z Hosted Compute Agent
+2026-11-10T08:07:19.3648172Z Version: 20261028.624
+2026-11-10T08:07:19.3648811Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-10T08:07:19.3649611Z Build Date: 2026-10-28T21:51:42Z
+2026-11-10T08:07:19.3650398Z Worker ID: {19cc333d-08d4-4abb-a18b-9b5351723443}
+2026-11-10T08:07:19.3651103Z Region: eastus
+2026-11-10T08:07:19.3651750Z Cloud: Azure
+2026-11-10T08:07:19.3652291Z ##[endgroup]
+2026-11-10T08:07:19.3654233Z ##[group]Operating System
+2026-11-10T08:07:19.3654897Z Ubuntu
+2026-11-10T08:07:19.3655492Z 26.04.1
+2026-11-10T08:07:19.3656061Z LTS
+2026-11-10T08:07:19.3657079Z ##[endgroup]
+2026-11-10T08:07:19.3657769Z ##[group]Runner Image
+2026-11-10T08:07:19.3658439Z Image: ubuntu-26.04
+2026-11-10T08:07:19.3659003Z Version: 20261101.186.1
+2026-11-10T08:07:19.3660388Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-10T08:07:19.3662008Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+2026-11-10T08:07:19.3662994Z ##[endgroup]
+2026-11-10T08:07:19.3664253Z ##[group]GITHUB_TOKEN Permissions
+2026-11-10T08:07:19.3666990Z Contents: read
+2026-11-10T08:07:19.3668056Z Metadata: read
+2026-11-10T08:07:19.3668666Z ##[endgroup]
+2026-11-10T08:07:19.3670846Z Secret source: Actions
+2026-11-10T08:07:19.3671986Z Cache mode: write
+2026-11-10T08:07:19.3672698Z Prepare workflow directory
+2026-11-10T08:07:19.4010654Z Prepare all required actions
+2026-11-10T08:07:19.4060882Z Getting action download info
+2026-11-10T08:07:19.5781398Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-10T08:07:19.6876048Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-11-10T08:07:19.8681276Z Complete job name: verify
+2026-11-10T08:07:19.9613426Z ##[group]Run actions/checkout@v4
+2026-11-10T08:07:19.9614414Z with:
+2026-11-10T08:07:19.9614921Z   repository: a01752896-prog/Lab-final-devsecops
+2026-11-10T08:07:19.9618782Z   token: ***
+2026-11-10T08:07:19.9619253Z   ssh-strict: true
+2026-11-10T08:07:19.9619709Z   ssh-user: git
+2026-11-10T08:07:19.9620159Z   persist-credentials: true
+2026-11-10T08:07:19.9620670Z   clean: true
+2026-11-10T08:07:19.9621130Z   sparse-checkout-cone-mode: true
+2026-11-10T08:07:19.9621665Z   fetch-depth: 1
+2026-11-10T08:07:19.9622109Z   fetch-tags: false
+2026-11-10T08:07:19.9622568Z   show-progress: true
+2026-11-10T08:07:19.9623040Z   lfs: false
+2026-11-10T08:07:19.9623468Z   submodules: false
+2026-11-10T08:07:19.9623944Z   set-safe-directory: true
+2026-11-10T08:07:19.9624477Z   allow-unsafe-pr-checkout: false
+2026-11-10T08:07:19.9625360Z ##[endgroup]
+2026-11-10T08:07:20.2911314Z Syncing repository: a01752896-prog/Lab-final-devsecops
+2026-11-10T08:07:20.2915104Z ##[group]Getting Git version info
+2026-11-10T08:07:20.2917010Z Working directory is '/home/runner/work/Lab-final-devsecops/Lab-final-devsecops'
+2026-11-10T08:07:20.2918891Z [command]/usr/bin/git version
+2026-11-10T08:07:20.2919577Z git version 2.56.0
+2026-11-10T08:07:20.2933451Z ##[endgroup]
+2026-11-10T08:07:20.2951269Z Temporarily overriding HOME='/home/runner/work/_temp/3d741bdc-2729-4e96-a7b6-20666296cccb' before making global git config changes
+2026-11-10T08:07:20.2953346Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-10T08:07:20.2959167Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Lab-final-devsecops/Lab-final-devsecops
+2026-11-10T08:07:20.3047470Z Deleting the contents of '/home/runner/work/Lab-final-devsecops/Lab-final-devsecops'
+2026-11-10T08:07:20.3062354Z ##[group]Initializing the repository
+2026-11-10T08:07:20.3069342Z [command]/usr/bin/git init /home/runner/work/Lab-final-devsecops/Lab-final-devsecops
+2026-11-10T08:07:20.3208615Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-10T08:07:20.3210740Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-10T08:07:20.3212222Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-10T08:07:20.3213394Z hint: call:
+2026-11-10T08:07:20.3213990Z hint:
+2026-11-10T08:07:20.3214746Z hint: 	git config --global init.defaultBranch <name>
+2026-11-10T08:07:20.3215684Z hint:
+2026-11-10T08:07:20.3216951Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-10T08:07:20.3218717Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-10T08:07:20.3219648Z hint:
+2026-11-10T08:07:20.3220178Z hint: 	git branch -m <name>
+2026-11-10T08:07:20.3220746Z hint:
+2026-11-10T08:07:20.3221499Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-10T08:07:20.3242961Z Initialized empty Git repository in /home/runner/work/Lab-final-devsecops/Lab-final-devsecops/.git/
+2026-11-10T08:07:20.3262051Z [command]/usr/bin/git remote add origin https://github.com/a01752896-prog/Lab-final-devsecops
+2026-11-10T08:07:20.3333978Z ##[endgroup]
+2026-11-10T08:07:20.3335573Z ##[group]Disabling automatic garbage collection
+2026-11-10T08:07:20.3338985Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-10T08:07:20.3398211Z ##[endgroup]
+2026-11-10T08:07:20.3399927Z ##[group]Setting up auth
+2026-11-10T08:07:20.3401648Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-10T08:07:20.3432015Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-10T08:07:20.4069017Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-10T08:07:20.4114278Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-10T08:07:20.4440794Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-10T08:07:20.4488856Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-10T08:07:20.4854679Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-10T08:07:20.4905595Z ##[endgroup]
+2026-11-10T08:07:20.4907348Z ##[group]Fetching the repository
+2026-11-10T08:07:20.4919534Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2f3d585b0161875a599fd59554a9a26bea15a0d0:refs/remotes/origin/main
+2026-11-10T08:07:20.7012172Z From https://github.com/a01752896-prog/Lab-final-devsecops
+2026-11-10T08:07:20.7014304Z  * [new ref]         2f3d585b0161875a599fd59554a9a26bea15a0d0 -> origin/main
+2026-11-10T08:07:20.7018479Z ##[endgroup]
+2026-11-10T08:07:20.7019830Z ##[group]Determining the checkout info
+2026-11-10T08:07:20.7021354Z ##[endgroup]
+2026-11-10T08:07:20.7026904Z [command]/usr/bin/git sparse-checkout disable
+2026-11-10T08:07:20.7096693Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-10T08:07:20.7129389Z ##[group]Checking out the ref
+2026-11-10T08:07:20.7134512Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-10T08:07:20.7214991Z Switched to a new branch 'main'
+2026-11-10T08:07:20.7221285Z branch 'main' set up to track 'origin/main'.
+2026-11-10T08:07:20.7228586Z ##[endgroup]
+2026-11-10T08:07:20.7275181Z [command]/usr/bin/git log -1 --format=%H
+2026-11-10T08:07:20.7302075Z 2f3d585b0161875a599fd59554a9a26bea15a0d0
+2026-11-10T08:07:20.7699915Z ##[group]Run actions/setup-python@v5
+2026-11-10T08:07:20.7701096Z with:
+2026-11-10T08:07:20.7701910Z   python-version: 3.12
+2026-11-10T08:07:20.7702845Z   check-latest: false
+2026-11-10T08:07:20.7712283Z   token: ***
+2026-11-10T08:07:20.7713152Z   update-environment: true
+2026-11-10T08:07:20.7714415Z   allow-prereleases: false
+2026-11-10T08:07:20.7715439Z   freethreaded: false
+2026-11-10T08:07:20.7716451Z ##[endgroup]
+2026-11-10T08:07:20.9194596Z ##[group]Installed versions
+2026-11-10T08:07:20.9327273Z (node:2370) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-10T08:07:20.9331721Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-10T08:07:20.9334609Z Successfully set up CPython (3.12.16)
+2026-11-10T08:07:20.9337641Z ##[endgroup]
+2026-11-10T08:07:20.9615315Z ##[group]Run python -m pip install --upgrade pip
+2026-11-10T08:07:20.9617379Z python -m pip install --upgrade pip
+2026-11-10T08:07:20.9618977Z python -m pip install -r requirements.txt
+2026-11-10T08:07:20.9723404Z shell: /usr/bin/bash -e {0}
+2026-11-10T08:07:20.9724990Z env:
+2026-11-10T08:07:20.9726924Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:20.9729855Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-10T08:07:20.9732736Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:20.9735307Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:20.9738089Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:20.9740724Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-10T08:07:20.9743754Z ##[endgroup]
+2026-11-10T08:07:21.8044755Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (26.2.2)
+2026-11-10T08:07:21.8611494Z Collecting pip
+2026-11-10T08:07:21.8850602Z   Downloading pip-26.3-py3-none-any.whl.metadata (4.6 kB)
+2026-11-10T08:07:21.8984709Z Downloading pip-26.3-py3-none-any.whl (2.0 MB)
+2026-11-10T08:07:21.9288065Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 90.7 MB/s  0:00:00
+2026-11-10T08:07:21.9859523Z Installing collected packages: pip
+2026-11-10T08:07:21.9862310Z   Attempting uninstall: pip
+2026-11-10T08:07:21.9901498Z     Found existing installation: pip 26.2.2
+2026-11-10T08:07:22.0585442Z     Uninstalling pip-26.2.2:
+2026-11-10T08:07:22.0653554Z       Successfully uninstalled pip-26.2.2
+2026-11-10T08:07:23.1444848Z Successfully installed pip-26.3
+2026-11-10T08:07:23.7040566Z Collecting pytest<10,>=8.0 (from -r requirements.txt (line 1))
+2026-11-10T08:07:23.7240878Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+2026-11-10T08:07:23.8178738Z Collecting bandit<2,>=1.7 (from -r requirements.txt (line 2))
+2026-11-10T08:07:23.8213207Z   Downloading bandit-1.9.4-py3-none-any.whl.metadata (7.1 kB)
+2026-11-10T08:07:23.8689847Z Collecting pip-audit<3,>=2.7 (from -r requirements.txt (line 3))
+2026-11-10T08:07:23.8721285Z   Downloading pip_audit-2.10.1-py3-none-any.whl.metadata (28 kB)
+2026-11-10T08:07:23.8861967Z Collecting iniconfig>=2 (from pytest<10,>=8.0->-r requirements.txt (line 1))
+2026-11-10T08:07:23.8895715Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+2026-11-10T08:07:23.9035261Z Collecting packaging>=24 (from pytest<10,>=8.0->-r requirements.txt (line 1))
+2026-11-10T08:07:23.9066822Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-11-10T08:07:23.9183629Z Collecting pluggy<2,>=1.6 (from pytest<10,>=8.0->-r requirements.txt (line 1))
+2026-11-10T08:07:23.9218642Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+2026-11-10T08:07:23.9378837Z Collecting pygments>=2.15 (from pytest<10,>=8.0->-r requirements.txt (line 1))
+2026-11-10T08:07:23.9406674Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-11-10T08:07:23.9825498Z Collecting PyYAML>=5.3.1 (from bandit<2,>=1.7->-r requirements.txt (line 2))
+2026-11-10T08:07:23.9862023Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-11-10T08:07:24.0048667Z Collecting stevedore>=1.20.0 (from bandit<2,>=1.7->-r requirements.txt (line 2))
+2026-11-10T08:07:24.0077704Z   Downloading stevedore-5.9.1-py3-none-any.whl.metadata (2.3 kB)
+2026-11-10T08:07:24.0544734Z Collecting rich (from bandit<2,>=1.7->-r requirements.txt (line 2))
+2026-11-10T08:07:24.0572660Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-11-10T08:07:24.0717720Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.0745752Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+2026-11-10T08:07:24.1042725Z Collecting cyclonedx-python-lib<12,>=5 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.1094480Z   Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl.metadata (6.9 kB)
+2026-11-10T08:07:24.1296046Z Collecting pip-api>=0.0.28 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.1320636Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+2026-11-10T08:07:24.1538257Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.1569264Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+2026-11-10T08:07:24.1997666Z Collecting requests>=2.31.0 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.2027757Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+2026-11-10T08:07:24.2329656Z Collecting tomli>=2.2.1 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.2363272Z   Downloading tomli-2.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+2026-11-10T08:07:24.2470693Z Collecting tomli-w>=1.2.0 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.2500870Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+2026-11-10T08:07:24.2793391Z Collecting platformdirs>=4.2.0 (from pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.2822195Z   Downloading platformdirs-4.14.5-py3-none-any.whl.metadata (5.7 kB)
+2026-11-10T08:07:24.2961000Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.2990598Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+2026-11-10T08:07:24.3155139Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.3183589Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+2026-11-10T08:07:24.3336587Z Collecting py-serializable<3.0.0,>=2.1.0 (from cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.3364446Z   Downloading py_serializable-2.2.0-py3-none-any.whl.metadata (4.5 kB)
+2026-11-10T08:07:24.3480725Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.3506736Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+2026-11-10T08:07:24.3744187Z Collecting typing_extensions<5.0,>=4.6 (from cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.3773865Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-10T08:07:24.3918024Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.3946166Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+2026-11-10T08:07:24.4067763Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.1.0->cyclonedx-python-lib<12,>=5->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.4105717Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+2026-11-10T08:07:24.4968029Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.5004546Z   Downloading msgpack-1.2.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+2026-11-10T08:07:24.5261691Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.5291115Z   Downloading filelock-4.2.10-py3-none-any.whl.metadata (2.3 kB)
+2026-11-10T08:07:24.5345209Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from pip-api>=0.0.28->pip-audit<3,>=2.7->-r requirements.txt (line 3)) (26.3)
+2026-11-10T08:07:24.5599301Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.5647790Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-11-10T08:07:24.6930634Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.6963103Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+2026-11-10T08:07:24.7125267Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.7155803Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-11-10T08:07:24.7362385Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.7393225Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+2026-11-10T08:07:24.7572097Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit<3,>=2.7->-r requirements.txt (line 3))
+2026-11-10T08:07:24.7600018Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+2026-11-10T08:07:24.7745949Z Collecting markdown-it-py>=2.2.0 (from rich->bandit<2,>=1.7->-r requirements.txt (line 2))
+2026-11-10T08:07:24.7775461Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-11-10T08:07:24.7905067Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->bandit<2,>=1.7->-r requirements.txt (line 2))
+2026-11-10T08:07:24.7933259Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-11-10T08:07:24.8022154Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+2026-11-10T08:07:24.8109786Z Downloading bandit-1.9.4-py3-none-any.whl (134 kB)
+2026-11-10T08:07:24.8194046Z Downloading pip_audit-2.10.1-py3-none-any.whl (62 kB)
+2026-11-10T08:07:24.8255799Z Downloading cyclonedx_python_lib-11.12.0-py3-none-any.whl (529 kB)
+2026-11-10T08:07:24.8358065Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.5/529.5 kB 85.6 MB/s  0:00:00
+2026-11-10T08:07:24.8407297Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+2026-11-10T08:07:24.8457351Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+2026-11-10T08:07:24.8503183Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+2026-11-10T08:07:24.8563704Z Downloading py_serializable-2.2.0-py3-none-any.whl (23 kB)
+2026-11-10T08:07:24.8610887Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2026-11-10T08:07:24.8658583Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+2026-11-10T08:07:24.8706873Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-10T08:07:24.8752715Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+2026-11-10T08:07:24.8799124Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+2026-11-10T08:07:24.8847358Z Downloading msgpack-1.2.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (475 kB)
+2026-11-10T08:07:24.8907100Z Downloading filelock-4.2.10-py3-none-any.whl (218 kB)
+2026-11-10T08:07:24.8959315Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+2026-11-10T08:07:24.9026278Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-11-10T08:07:24.9078941Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+2026-11-10T08:07:24.9126864Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+2026-11-10T08:07:24.9174090Z Downloading platformdirs-4.14.5-py3-none-any.whl (35 kB)
+2026-11-10T08:07:24.9221346Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-11-10T08:07:24.9294468Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 211.7 MB/s  0:00:00
+2026-11-10T08:07:24.9326201Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+2026-11-10T08:07:24.9385997Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 152.4 MB/s  0:00:00
+2026-11-10T08:07:24.9413160Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+2026-11-10T08:07:24.9463164Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+2026-11-10T08:07:24.9516160Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-11-10T08:07:24.9565092Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+2026-11-10T08:07:24.9617638Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+2026-11-10T08:07:24.9692348Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-11-10T08:07:24.9753659Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-11-10T08:07:24.9808159Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-11-10T08:07:24.9855965Z Downloading stevedore-5.9.1-py3-none-any.whl (54 kB)
+2026-11-10T08:07:24.9906894Z Downloading tomli-2.5.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (286 kB)
+2026-11-10T08:07:24.9964742Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+2026-11-10T08:07:25.0010898Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-11-10T08:07:25.2278745Z Installing collected packages: sortedcontainers, boolean.py, urllib3, typing_extensions, tomli-w, tomli, stevedore, PyYAML, pyparsing, pygments, pluggy, platformdirs, pip-api, packaging, packageurl-python, msgpack, mdurl, license-expression, iniconfig, idna, filelock, defusedxml, charset_normalizer, certifi, requests, pytest, py-serializable, pip-requirements-parser, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, bandit, pip-audit
+2026-11-10T08:07:27.7006029Z 
+2026-11-10T08:07:27.7041058Z Successfully installed CacheControl-0.14.4 PyYAML-6.0.3 bandit-1.9.4 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 cyclonedx-python-lib-11.12.0 defusedxml-0.7.1 filelock-4.2.10 idna-3.20 iniconfig-2.3.1 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.4 packageurl-python-0.17.6 packaging-26.3 pip-api-0.0.35 pip-audit-2.10.1 pip-requirements-parser-32.0.1 platformdirs-4.14.5 pluggy-1.7.0 py-serializable-2.2.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.2.0 requests-2.34.2 rich-15.0.0 sortedcontainers-2.4.0 stevedore-5.9.1 tomli-2.5.0 tomli-w-1.2.0 typing_extensions-4.16.0 urllib3-2.8.0
+2026-11-10T08:07:27.7939384Z ##[group]Run python -m pytest -q
+2026-11-10T08:07:27.7939716Z python -m pytest -q
+2026-11-10T08:07:27.7992639Z shell: /usr/bin/bash -e {0}
+2026-11-10T08:07:27.7992890Z env:
+2026-11-10T08:07:27.7993160Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:27.7993613Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-10T08:07:27.7994086Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:27.7994479Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:27.7994864Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:27.7995257Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-10T08:07:27.7995583Z ##[endgroup]
+2026-11-10T08:07:28.2765181Z .......                                                                  [100%]
+2026-11-10T08:07:28.2766573Z 7 passed in 0.02s
+2026-11-10T08:07:28.3043396Z ##[group]Run python -m bandit -r src -q
+2026-11-10T08:07:28.3043764Z python -m bandit -r src -q
+2026-11-10T08:07:28.3095534Z shell: /usr/bin/bash -e {0}
+2026-11-10T08:07:28.3095851Z env:
+2026-11-10T08:07:28.3096262Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.3096996Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-10T08:07:28.3097685Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.3098104Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.3098518Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.3098947Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-10T08:07:28.3099297Z ##[endgroup]
+2026-11-10T08:07:28.4928381Z ##[group]Run python -m pip_audit -r requirements-audit.txt
+2026-11-10T08:07:28.4928883Z python -m pip_audit -r requirements-audit.txt
+2026-11-10T08:07:28.4981211Z shell: /usr/bin/bash -e {0}
+2026-11-10T08:07:28.4981476Z env:
+2026-11-10T08:07:28.4981747Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.4982201Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-10T08:07:28.4982656Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.4983057Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.4983471Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-10T08:07:28.4983864Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-10T08:07:28.4984195Z ##[endgroup]
+2026-11-10T08:07:34.4157116Z No known vulnerabilities found
+2026-11-10T08:07:34.4697315Z Post job cleanup.
+2026-11-10T08:07:34.5966685Z (node:2544) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-10T08:07:34.5967741Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-10T08:07:34.6155571Z Post job cleanup.
+2026-11-10T08:07:34.7093785Z [command]/usr/bin/git version
+2026-11-10T08:07:34.7144009Z git version 2.56.0
+2026-11-10T08:07:34.7184323Z Temporarily overriding HOME='/home/runner/work/_temp/5edec22b-4796-46fb-bd6b-60fb78376f28' before making global git config changes
+2026-11-10T08:07:34.7185997Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-10T08:07:34.7190396Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Lab-final-devsecops/Lab-final-devsecops
+2026-11-10T08:07:34.7237323Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-10T08:07:34.7277520Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-10T08:07:34.7620307Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-10T08:07:34.7652827Z http.https://github.com/.extraheader
+2026-11-10T08:07:34.7682756Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-10T08:07:34.7724724Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-10T08:07:34.8082768Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-10T08:07:34.8127260Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-10T08:07:34.8589243Z Cleaning up orphan processes
+2026-11-10T08:07:34.9086900Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
